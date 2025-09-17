@@ -15,8 +15,10 @@
    ./mvnw clean package
    ```
 2. **Run the application:**
+
+gives you the default subcommands
    ```bash
-   java -cp target/java-wsl-maven-1.0-SNAPSHOT.jar ch.heigvd.Main
+   java -jar target/java-wsl-maven-1.0-SNAPSHOT.jar -h
    ```
 
 ## Features
@@ -25,7 +27,7 @@
 - Unit test example
 
 ## Requirements
-- Java 8+
+- Java
 - Maven
 
 ## License

@@ -7,12 +7,11 @@ import picocli.CommandLine;
 @CommandLine.Command(name = "hello", description = "Print a 'Hello World!' type of message.")
 public class Hello implements Callable<Integer> {
 
-  @CommandLine.ParentCommand protected Main parent;
+  @CommandLine.ParentCommand
+  protected Main parent;
 
-  @CommandLine.Option(
-      names = {"-g", "--greetings"},
-      description = "The greetings to address the user.",
-      defaultValue = "Hello")
+  @CommandLine.Option(names = { "-g",
+      "--greetings" }, description = "The greetings to address the user.", defaultValue = "Hello")
   protected String greetings;
 
   @Override
